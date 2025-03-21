@@ -1,147 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket Booking</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body class="bg-blue-100">
-    <header class="flex items-center justify-between p-4 border-b">
-        <div class="flex items-center space-x-4">
-            <img src="https://placehold.co/100x50" alt="redBus logo" class="h-8"/>
-            <div class="border-r h-8"></div>
-            <div class="flex items-center space-x-4">
-                <div class="flex items-center space-x-2">
-                    <img src="https://placehold.co/50x50" alt="Bus Tickets icon" class="h-8"/>
-                    <span class="text-red-600 font-semibold">Bus Tickets</span>
+<body>
+
+    <header class="header">
+        <div class="logo-section">
+            <img src="/Home_Page/assets/WhatsApp Image 2025-03-21 at 17.15.10_5a84c3f9.jpg" alt="redBus Logo" class="logo">
+            <div class="divider"></div>
+            <div class="nav-items">
+                <div class="nav-item">
+                    <img src="assets/bus.png" alt="Bus Icon">
+                    <span>Bus Tickets</span>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <img src="https://placehold.co/50x50" alt="Train Tickets icon with discount" class="h-8"/>
-                    <span class="text-gray-700 font-semibold">Train Tickets</span>
+                <div class="nav-item">
+                    <img src="assets/train.png" alt="Train Icon">
+                    <span>Train Tickets</span>
                 </div>
             </div>
         </div>
-        <div class="flex items-center space-x-6">
-            <div class="flex items-center space-x-1">
-                <i class="fas fa-headset text-gray-600"></i>
-                <span class="text-gray-600">Help</span>
-            </div>
-            <div class="flex items-center space-x-1">
-                <i class="fas fa-globe text-gray-600"></i>
-                <span class="text-gray-600">English</span>
-            </div>
-            <div class="flex items-center space-x-1">
-                <i class="fas fa-user text-gray-600"></i>
-                <span class="text-gray-600">Account</span>
-                <i class="fas fa-chevron-down text-gray-600"></i>
-            </div>
+        <div class="account-section">
+            <div class="account-item"><i class="fas fa-headset"></i> Help</div>
+            <div class="account-item"><i class="fas fa-globe"></i> English</div>
+            <div class="account-item"><i class="fas fa-user"></i> Account <i class="fas fa-chevron-down"></i></div>
         </div>
     </header>
 
-    <div class="relative">
-        <img src="https://placehold.co/1200x400" alt="Background with cityscape and road" class="w-full h-64 object-cover"/>
-        <div class="absolute inset-0 flex flex-col items-center justify-center">
-            <h1 class="text-white text-2xl md:text-4xl font-bold mb-4">India's No. 1 Online Bus Ticket Booking Site</h1>
-            <div class="bg-white rounded-full shadow-lg flex items-center p-2 md:p-4 w-11/12 md:w-3/4 lg:w-1/2">
-                <div class="flex items-center w-1/3">
-                    <i class="fas fa-map-marker-alt text-gray-500 mr-2"></i>
-                    <input type="text" id="from" class="w-full p-2 outline-none" placeholder="From"/>
+    <!-- Booking Section -->
+    <div class="booking-section">
+        <div class="banner-container">
+            <img src="assets/bu_banner.png" alt="Banner" class="banner">
+        </div>
+        <div class="booking-form">
+            <h1>India's No.1 Online Bus Ticket Booking Site</h1>
+            <div class="form-container">
+                <div class="input-group">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="From">
                 </div>
-                <div class="flex items-center justify-center w-1/6">
-                    <i class="fas fa-exchange-alt text-gray-500"></i>
+                <div class="swap-icon">
+                    <i class="fas fa-exchange-alt"></i>
                 </div>
-                <div class="flex items-center w-1/3">
-                    <i class="fas fa-map-marker-alt text-gray-500 mr-2"></i>
-                    <input type="text" id="to" class="w-full p-2 outline-none" placeholder="To"/>
+                <div class="input-group">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="To">
                 </div>
-                <div class="flex items-center w-1/3">
-                    <i class="fas fa-calendar-alt text-gray-500 mr-2"></i>
-                    <input type="date" id="date" class="w-full p-2 outline-none"/>
+                <div class="input-group">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date">
                 </div>
-                <button id="searchBuses" class="bg-red-500 text-white rounded-full px-4 py-2 ml-2">SEARCH BUSES</button>
+                <button class="search-btn">SEARCH BUSES</button>
             </div>
         </div>
     </div>
 
-    <div class="mt-8 px-4 md:px-16">
-        <div class="flex justify-between items-center mb-4">
-            <h2 class="text-xl font-bold">TRENDING OFFERS</h2>
-            <a href="#" class="text-blue-500">View All</a>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-blue-500 h-32"></div>
-            <div class="bg-green-500 h-32"></div>
-            <div class="bg-red-500 h-32"></div>
-            <div class="bg-yellow-500 h-32"></div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="header">
-            <h1>GOVERNMENT BUSES</h1>
-            <button class="view-all">View All</button>
-        </div>
-
+    <!-- Government Buses Section -->
+    <div class="govt-buses">
+        <h1>GOVERNMENT BUSES</h1>
         <div class="bus-grid">
             <div class="bus-card">
-                <div class="bus-info">
-                    <h2>GSRTC</h2>
-                    <span class="rating">3.7</span>
-                </div>
+                <h2>GSRTC <span class="rating">3.7</span></h2>
                 <p>1450 services including Garuda Plus, Rajdhani and more</p>
-                <p class="partner">Official booking partner of TGSRTC</p>
-                <p class="discount">Use code FIRST to save up to ₹250 (only for first-time users)</p>
+                <p class="official">Official booking partner of TGSRTC</p>
+                <p class="offer">Use code FIRST to save up to ₹250 (only for first-time users)</p>
             </div>
-
             <div class="bus-card">
-                <div class="bus-info">
-                    <h2>KERALA RTC</h2>
-                    <span class="rating">3.5</span>
-                </div>
+                <h2>KERALA RTC <span class="rating">3.5</span></h2>
                 <p>940 services including Swift, AC Multiaxle and more</p>
-                <p class="partner">Official booking partner of KSRTC</p>
-                <p class="discount">Use code FIRST to save up to ₹250 (only for first-time users)</p>
+                <p class="official">Official booking partner of KSRTC</p>
+                <p class="offer">Use code FIRST to save up to ₹250 (only for first-time users)</p>
             </div>
-
             <div class="bus-card">
-                <div class="bus-info">
-                    <h2>SBSTC</h2>
-                    <span class="rating">3.95</span>
-                </div>
+                <h2>SBSTC <span class="rating">3.95</span></h2>
                 <p>480 services including Non AC Bus and more</p>
-                <p class="partner">Official booking partner of SBSTC</p>
-                <p class="discount">Use code FIRST to save up to ₹250 (only for first-time users)</p>
-            </div>
-        </div>
-
-        <div class="train-section">
-            <h2>NOW, <span class="highlight">GET MORE THAN JUST BUS</span> TICKETS WITH REDBUS!</h2>
-        </div>
-
-        <div class="train-container">
-            <div class="train-info">
-                <div class="train-header">
-                    <img src="https://placehold.co/24x24" alt="Train icon">
-                    <h3>Train Tickets</h3>
-                </div>
-                <p>Book IRCTC Train Tickets on redRail with a simple & superfast booking process, no service fee + no payment gateway charge.</p>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Authorised IRCTC Partner</li>
-                    <li><i class="fas fa-check-circle"></i> Instant refunds on UPI payments</li>
-                    <li><i class="fas fa-check-circle"></i> Hassle-free customer support</li>
-                </ul>
-                <button class="book-train">Book Train Tickets</button>
-            </div>
-            <div class="train-image">
-                <img src="https://placehold.co/400x300" alt="Illustration of a train">
+                <p class="official">Official booking partner of SBSTC</p>
+                <p class="offer">Use code FIRST to save up to ₹250 (only for first-time users)</p>
             </div>
         </div>
     </div>
 
-
-    <script src="script.js"></script>
 </body>
 </html>
