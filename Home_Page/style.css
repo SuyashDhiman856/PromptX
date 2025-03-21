@@ -380,6 +380,17 @@ nav {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px var(--extra-light    );
 }
+.nav_logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav_logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 1px rgba(168, 167, 167, 0.5);
+}
 
 .gallery_container{
     padding: 5rem 1rem;
