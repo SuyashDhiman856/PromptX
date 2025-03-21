@@ -632,3 +632,38 @@ nav {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+.pages_links {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.pages_links{
+    margin: 0 auto;
+}
+.nlink{
+    margin-top: 1.5rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 8px;
+    background-color: rgba(105, 102, 102, 0.5);
+}
+
+.nlink:hover{
+    background-color: rgba(255, 247, 247, 0.5);
+}
+.nlink a {
+    padding: 1.5rem 5px;
+    font-weight: 300;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.nlink a:hover {
+    color: var(--primary-color);
+}
+
+.nlink span {
+    padding: 1rem 0;
+    color: var(--white);
+    cursor: pointer;
+}
