@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyChoize - Self Drive Cars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Home_Page/assets/WhatsApp Image 2025-03-21 at 17.15.10_5a84c3f9.jpg" alt="MyChoize Logo">
+            <span>GET SET GO.</span>
+        </div>
+        <nav>
+            <ul>
+                FEEL FREE TO RENT ANY VEHICLE WITH US.
+            </ul>
+        </nav>
+        <div class="logo right">
+            <img src="./assets/IMG-20240122-WA0256.jpg" alt="MyChoize Logo">
+        </div>
+    </header>
+
+    <main>
+        <section class="vehicles-section">
+            <h2 class="vehicles-title">Choose a Vehicle</h2>
+            <section class="vehicles">
+                <div class="vehicle-container" id="bike">
+                    <div class="vehicle">
+                        <img src="./assets/bycicle.png" alt="Bicycle">
+                    </div>
+                    <span class="vehicle-name">Bike</span>
+                </div>
+        
+                <div class="vehicle-container" id="car">
+                    <div class="vehicle">
+                        <img src="./assets/sport-car.png" alt="Car">
+                    </div>
+                    <span class="vehicle-name">Car</span>
+                </div>
+            </section>
+        </section>                    
+        <section class="search-section">
+            <div class="tabs">
+                <button class="tab active">DAILY RENTALS</button>
+                <button class="tab">MONTHLY SUBSCRIPTION</button>
+            </div>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="location">LOCATION</label>
+                    <select id="location" name="location">
+                        <option value="dehradun">Dehradun</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="shimla">Shimla</option>
+                        <option value="mussoorie">Mussoorie</option>
+                        <option value="patna">Patna</option>
+                        <option value="muzaffarpur">Muzaffarpur</option>
+                        <option value="manali">Manali</option>
+                        <option value="lacknow">Lacknow</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pickup-date">PICK-UP DATE</label>
+                    <input type="datetime-local" id="pickup-date" name="pickup-date" value="2025-03-23T09:30">
+                </div>
+                <div class="form-group">
+                    <label for="return-date">RETURN DATE</label>
+                    <input type="datetime-local" id="return-date" name="return-date" value="2025-03-26T06:30">
+                </div>
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </section>
+
+        <section class="promo-section">
+            <div class="promo-text">
+                <h1>BRAND NEW FLEETS</h1>
+                <p>Drive our latest car models. Average age of our fleet is 20 months.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
