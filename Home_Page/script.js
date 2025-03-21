@@ -54,3 +54,23 @@ ScrollReveal().reveal(".journals_card",{
     ...scrollRevealOption,
     interval: 400,
 });
+
+//search bar
+document.getElementById('link_search').addEventListener('click', function() {
+    let navLinks = document.getElementById('nav_links');
+    let searchBar = document.getElementById('search_bar');
+
+    // Hide navigation links with fade-out effect
+    navLinks.style.transition = 'opacity 0.5s ease-out';
+    navLinks.style.opacity = '0';
+
+    setTimeout(() => {
+        navLinks.style.display = 'none';
+
+        // Show search bar with fade-in effect
+        searchBar.style.display = 'flex';
+        setTimeout(() => {
+            searchBar.style.opacity = '1';
+        }, 10); // Small delay for smooth transition
+    }, 500);
+});
