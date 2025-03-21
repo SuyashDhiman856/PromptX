@@ -1,8 +1,303 @@
-header nav {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header .logo-section a {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 200px;
+}
+
+.input-group input {
+    border-radius: 50px;
+}
+
+.nav_links {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.link a {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.search-btn search_icon {
+    height: 50px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+    border: 1px solid #ff4d4d;
+    outline: none;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+.header-icons i {
+    transition: color 0.3s;
+}
+
+.header-icons i:hover {
+    color: #ff4d4d;
+}
+.banner {
+    filter: blur(8px);
+}
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust height */
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+}
+
+/* Header */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    background-color: #333;
-    color: #fff;
+    padding: 12px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.divider {
+    width: 1px;
+    height: 30px;
+    background: #ddd;
+}
+
+/* Navigation Items */
+.nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-item img {
+    height: 24px;
+}
+
+/* Account Section */
+.account-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #444;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.account-item:hover {
+    color: red;
+}
+
+.account-item i {
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-section, .account-section {
+        justify-content: center;
+    }
+
+    .nav-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Booking Section */
+.booking-section {
+    position: relative;
+    text-align: center;
+}
+
+.banner-container {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+}
+
+.booking-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 80px;
+    text-align: center;
+}
+
+.booking-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    background: white;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 120px;
+}
+
+.swap-icon {
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    background: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Government Buses */
+.govt-buses {
+    padding: 20px;
+    text-align: center;
+}
+
+.govt-buses h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.bus-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bus-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bus-card h2 {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    background: green;
+    color: white;
+    padding: 3px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.official {
+    color: gray;
+    font-size: 14px;
+}
+
+.offer {
+    color: red;
+    font-size: 14px;
 }
