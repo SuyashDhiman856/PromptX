@@ -1,32 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <title>Hotel Booking</title>
-    </head>
+    <header class="header">
+        <div class="logo-section">
+            <img src="/Home_Page/assets/WhatsApp Image 2025-03-21 at 17.15.10_5a84c3f9.jpg" alt="redBus Logo" class="logo">
+            <a href="#">GetSetGo.</a>
+        </div>
+        <ul class="nav_links" id="nav_links">
+            <li class="link"><a href="#stays">Stay</a></li>
+            <li class="link"><a href="#experience">Experience</a></li>
+        </ul>
+        <div class="account-section">
+            <div class="account-item"><i class="fas fa-headset"></i> Help</div>
+            <div class="account-item"><i class="fas fa-globe"></i> English</div>
+            <div class="account-item"><i class="fas fa-user"></i> Account <i class="fas fa-chevron-down"></i></div>
+        </div>
+    </header>
 
-    <body>
-        <header>
-            <nav>
-                <div class="nav_logo">
-                    <img src="./assets/WhatsApp Image 2025-03-21 at 17.15.10_5a84c3f9.jpg" >
-                    <a href="#">GetSetGo.</a>
+    <!-- Booking Section -->
+    <div class="booking-section">
+        <div class="banner-container">
+            <img src="assets/bu_banner.png" alt="Banner" class="banner">
+        </div>
+        <div class="booking-form">
+            <div class="form-container">
+                <div class="input-group">
+                    <p>Where</p>
+                    <input type="text" placeholder="Search Destinations">
                 </div>
-                <ul class="nav_links" id="nav_links">
-                    <li class="link"><a href="#home">Stay</a></li>
-                    <li class="link"><a href="#about">Experience</a></li>
-                </ul>
-                <div class="burger" id="burger">
-                    <div class="line1">Contact</div>
-                    <div class="line2">Account</div>
+                <div class="input-group">
+                    <p>Check In</p>
+                    <input type="text" placeholder="Add Dates">
                 </div>
-            </nav>
-        </header>
-    </body>
+                <div class="input-group">
+                    <p>Check Out</p>
+                    <input type="text" placeholder="Add Dates">
+                </div>
+                <div class="input-group">
+                    <p>Who</p>
+                    <input type="text" placeholder="Add Guests">
+                </div>
+                <button class="search-btn"><img src="assets/icons8-search-60.png" alt="" style="height: 20px;">SEARCH</button>
+            </div>
+        </div>
+    </div>
 
+    <!-- Government Buses Section -->
+    <div class="govt-buses">
+        <h1>GOVERNMENT BUSES</h1>
+        <div class="bus-grid">
+            <div class="bus-card">
+                <h2>GSRTC <span class="rating">3.7</span></h2>
+                <p>1450 services including Garuda Plus, Rajdhani and more</p>
+                <p class="official">Official booking partner of TGSRTC</p>
+                <p class="offer">Use code FIRST to save up to ₹250 (only for first-time users)</p>
+            </div>
+            <div class="bus-card">
+                <h2>KERALA RTC <span class="rating">3.5</span></h2>
+                <p>940 services including Swift, AC Multiaxle and more</p>
+                <p class="official">Official booking partner of KSRTC</p>
+                <p class="offer">Use code FIRST to save up to ₹250 (only for first-time users)</p>
+            </div>
+            <div class="bus-card">
+                <h2>SBSTC <span class="rating">3.95</span></h2>
+                <p>480 services including Non AC Bus and more</p>
+                <p class="official">Official booking partner of SBSTC</p>
+                <p class="offer">Use code FIRST to save up to ₹250 (only for first-time users)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
