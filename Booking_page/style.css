@@ -147,10 +147,14 @@ body {
 
 .banner {
     width: 100%;
+    height: auto;
     object-fit: cover;
     filter: blur(3px);
 }
 
+#bus{
+    color: red;
+}
 .booking-form {
     position: absolute;
     top: 50%;
@@ -252,4 +256,74 @@ body {
 .offer {
     color: red;
     font-size: 14px;
+}
+/* Footer Styling */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    color: #ff4500;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff4500;
+}
+
+.footer-section .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-section .social-icons a:hover {
+    color: #ff4500;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #111;
+    margin-top: 20px;
 }
