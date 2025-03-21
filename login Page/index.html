@@ -3,34 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Travel Website - Login</title>
+    <title>RedBus Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <div class="login-container" id="login-container">
-            <h1>Welcome Back!</h1>
-            <form id="login-form">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit" id="lg_in">Login</button>
-            </form>
-            <p>Don't have an account? <a href="#" id="show-register">Register here</a></p>
-        </div>
+<body class="bg-gray-100">
 
-        <div class="registration-container" id="registration-form" style="display: none;">
-            <h1>Create Your Account</h1>
-            <form>
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <input type="text" placeholder="Phone Number" required>
-                <input type="text" placeholder="Country" required>
-                <button type="submit">Register</button>
-            </form>
-            <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-red-500 text-2xl font-bold">RedBus Clone</h1>
+            <div>
+                <button class="bg-red-500 text-white px-4 py-2 rounded">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bus Section -->
+    <div class="bg-red-500 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Book Bus Tickets</h2>
+            <div class="flex justify-center">
+                <input type="text" placeholder="From" class="search-input">
+                <input type="text" placeholder="To" class="search-input">
+                <input type="date" class="search-input">
+                <button class="search-button">Search Buses</button>
+            </div>
         </div>
     </div>
+
+    <!-- Featured Buses -->
+    <div class="container mx-auto py-12">
+        <h2 class="text-2xl font-bold mb-6">Popular Government Buses</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bus-card">
+                <h3 class="text-lg font-bold">GSRTC</h3>
+                <p>1500+ buses | 4.2 rating</p>
+                <button class="book-now">Book Now</button>
+            </div>
+            <div class="bus-card">
+                <h3 class="text-lg font-bold">Kerala RTC</h3>
+                <p>1200+ buses | 4.0 rating</p>
+                <button class="book-now">Book Now</button>
+            </div>
+            <div class="bus-card">
+                <h3 class="text-lg font-bold">SBSTC</h3>
+                <p>800+ buses | 3.9 rating</p>
+                <button class="book-now">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Train Ticket Section -->
+    <div class="bg-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">Book Train Tickets</h2>
+            <p class="text-gray-700 mb-6">IRCTC Authorized Partner | Hassle-Free Booking</p>
+            <button class="train-booking-btn">Book Train Tickets</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-12">
+        <p>RedBus Clone | For Educational Purposes Only</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
