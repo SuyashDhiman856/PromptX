@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+input:focus {
+    border: 1px solid #ff4d4d;
+    outline: none;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+.header-icons i {
+    transition: color 0.3s;
+}
+
+.header-icons i:hover {
+    color: #ff4d4d;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+    border: 1px solid #ff4d4d;
+    outline: none;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+.header-icons i {
+    transition: color 0.3s;
+}
+
+.header-icons i:hover {
+    color: #ff4d4d;
+}
