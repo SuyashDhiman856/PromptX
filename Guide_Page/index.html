@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Guide Profile</h1>
+            <div id="guide-details">
+                <h2 id="guide-name">Shashank kumar</h2>
+                <p id="guide-location">Location: Dehradun, Uttrakhand</p>
+                <p id="guide-experience">Experience: 10 years</p>
+            </div>
+        </header>
+
+        <div class="switch-section">
+            <label><input type="radio" name="section" value="clients" checked ><span id="my_client"> My Clients</span></label>
+            <label><input type="radio" name="section" value="requests"> Client Requests</label>
+        </div>
+
+        <section id="clients-section">
+            <h2>My Clients</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Destination</th>
+                        <th>Duration</th>
+                        <th>Payment</th>
+                        <th>Dates</th>
+                    </tr>
+                </thead>
+                <tbody id="clients-list">
+                    <tr>
+                        <td>Om Biswas</td>
+                        <td>Mussoorie, Shimla</td>
+                        <td>5 days</td>
+                        <td>₹2000</td>
+                        <td>22/03/2025 - 27/03/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Suyash</td>
+                        <td>Mussoorie, Shimla</td>
+                        <td>7 days</td>
+                        <td>₹2500</td>
+                        <td>15/04/2025 - 22/04/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="requests-section" style="display: none;">
+            <h2>Client Requests</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Destination</th>
+                        <th>Duration</th>
+                        <th>Payment</th>
+                        <th>Dates</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="requests-list">
+                    <tr>
+                        <td>Emma Watson</td>
+                        <td>London, UK</td>
+                        <td>6 days</td>
+                        <td>₹2200</td>
+                        <td>22/03/2025 - 28/03/2025</td>
+                        <td><button class="accept-btn">Accept</button></td>
+                    </tr>
+                    <tr>
+                        <td>David Miller</td>
+                        <td>Sydney, Australia</td>
+                        <td>10 days</td>
+                        <td>₹3000</td>
+                        <td>10/04/2025 - 20/04/2025</td>
+                        <td><button class="accept-btn">Accept</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
